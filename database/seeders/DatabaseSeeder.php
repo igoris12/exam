@@ -16,7 +16,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $faker = Faker::create('it_IT');
+        $faker = Faker::create();
         DB::table('users')->insert([
             'name' => 'admin',
             'email' => 'admin@gmail.com',
