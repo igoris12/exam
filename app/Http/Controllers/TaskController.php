@@ -87,10 +87,11 @@ class TaskController extends Controller
     {
         
 
-         $validator = Validator::make($request->all(),
+       $todayDate = date("Y-m-d H:i:s");
+        $validator = Validator::make($request->all(),
             [
                 'task_name' => ['required', 'min:3', 'max:100'],
-                'task_completed_data' => ['required',],
+                'task_completed_data' => ['required', 'date',"after_or_equal:$todayDate",],
                 'task_description' => ['required'],
                 'statuse_id' => ['required' ,'integer', 'min:1'],
             ]
@@ -138,12 +139,13 @@ class TaskController extends Controller
     public function update(Request $request, task $task)
     {
 
+       $todayDate = date("Y-m-d H:i:s");
                    
 
          $validator = Validator::make($request->all(),
             [
                 'task_name' => ['required', 'min:3', 'max:100'],
-                'task_completed_data' => ['required',],
+                'task_completed_data' => ['required',"after_or_equal:$todayDate",],
                 'task_description' => ['required'],
                 'statuse_id' => ['required' ,'integer', 'min:1'],
             ]

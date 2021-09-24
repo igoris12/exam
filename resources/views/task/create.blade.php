@@ -17,15 +17,15 @@
 
                                 <div class="form-group">
                                     <label class="form-label">Complite data</label>
-                                    <input class="form-control" type="date" name="task_completed_data"
+                                    <input class="form-control" type="datetime-local" name="task_completed_data"
                                         value="{{ old('task_completed_data') }}">
                                 </div>
 
                                 <div class="form-group">
                                     <label class="form-label">Task discription</label>
                                     <textarea id="summernote" name="task_description">
-                                                                            {{ old('task_description') }}
-                                                                    </textarea>
+                                                                                {{ old('task_description') }}
+                                                                        </textarea>
                                 </div>
 
                                 <div class="form-group">
