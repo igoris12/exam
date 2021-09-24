@@ -10002,3 +10002,131 @@ h3 {
     border-color: #dee2e6;
   }
 }
+.card {
+  font-weight: bold;
+  font-size: larger;
+}
+.card fieldset {
+  margin: 15px;
+  border: 2px solid black;
+  padding: 12px;
+  display: flex;
+}
+.card fieldset legend {
+  color: black;
+  font-size: 25px;
+  display: inline-block;
+  padding: 6px;
+  text-align: center;
+  width: auto;
+}
+.card fieldset .block {
+  margin: 7px;
+}
+
+.listBlock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.listBlock__content {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+}
+.listBlock__buttons {
+  display: flex;
+}
+.listBlock__buttons .btn {
+  margin: 0px 5px;
+}
+
+@media (max-width: 600px) {
+  .listBlock {
+    flex-direction: column;
+  }
+  .listBlock__content {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10px;
+  }
+  .listBlock__content .item {
+    text-align: center;
+  }
+}
+.bg-white {
+  background: #5d5555;
+  background: linear-gradient(0deg, #5d5555 23%, #87868b 70%) !important;
+}
+.bg-white .nav-link {
+  color: white !important;
+}
+.bg-white .navbar-brand {
+  color: white;
+}
+
+.pb-4,
+.py-4 {
+  background-color: #b6a9a9;
+}
+.pb-4 .card-header,
+.py-4 .card-header {
+  color: white;
+  background: #5d5555;
+  background: linear-gradient(0deg, #5d5555 23%, #87868b 70%);
+}
+.pb-4 .card,
+.py-4 .card {
+  border: 1px solid #5d5555;
+  box-shadow: 1px 3px 5px #5d5555;
+  margin-bottom: 300px;
+}
+@media only screen and (max-width: 1000px) {
+  .pb-4 .card #sortBut fieldset,
+.py-4 .card #sortBut fieldset {
+    display: flex;
+    justify-content: space-between;
+  }
+  .pb-4 .card #sortBut fieldset .block,
+.py-4 .card #sortBut fieldset .block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .pb-4 .card #sortBut fieldset .block .btn,
+.py-4 .card #sortBut fieldset .block .btn {
+    display: block;
+    margin-top: 5px;
+  }
+}
+.pb-4 .card .pagination .page-link,
+.py-4 .card .pagination .page-link {
+  background-color: #7e7b7b;
+  color: white;
+}
+.pb-4 .card form,
+.py-4 .card form {
+  background-color: #d6cbcb;
+}
+.pb-4 .card .card-body,
+.py-4 .card .card-body {
+  background-color: #d6cbcb;
+}
+.pb-4 .card .card-body .list-group-item,
+.py-4 .card .card-body .list-group-item {
+  background-color: #eee3e3;
+}
+.pb-4 .card .card-body .list-group-item form,
+.py-4 .card .card-body .list-group-item form {
+  background-color: #eee3e3;
+}
+.pb-4 .card .card-body .list-group-item p,
+.py-4 .card .card-body .list-group-item p {
+  padding: 10px;
+  margin: 0;
+  font-weight: normal;
+}
+
+.form-group {
+  margin-bottom: 2rem;
+}
