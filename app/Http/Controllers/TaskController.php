@@ -72,7 +72,7 @@ class TaskController extends Controller
      */
     public function create()
     {
-        $statuses = Statuse::orderBy('name', 'desc')->get();
+        $statuses = Statuse::orderBy('name')->get();
         return view('task.create', ['statuses' => $statuses]);
 
     }
